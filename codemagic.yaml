@@ -1,0 +1,24 @@
+workflows:
+  testing-workflow:
+    name: iOS Workflow
+    environment:
+      vars:
+        XCODE_WORKSPACE: "TuistExample.xcworkspace"
+        XCODE_SCHEME: "TuistExample"
+      xcode: latest
+      cocoapods: default
+    triggering:
+      branch_patterns:
+        - pattern: "master"
+          include: true
+          source: true
+    scripts:
+      - name: Installing tuist
+        script: curl -Ls https://install.tuist.io | bash
+      - name: Generate project
+        script: tuist generate
+      - name: Run tests
+        script: |
+          xcode-project run-tests \
+              --workspace "$XCODE_WORKSPACE" \
+              --scheme "$XCODE_SCHEME" \
