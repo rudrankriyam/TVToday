@@ -3,8 +3,8 @@ workflows:
     name: iOS Workflow
     environment:
       vars:
-        XCODE_WORKSPACE: "TuistExample.xcworkspace"
-        XCODE_SCHEME: "TuistExample"
+        XCODE_WORKSPACE: "TVToday.xcworkspace"
+        XCODE_SCHEME: "TVToday"
       xcode: latest
       cocoapods: default
     triggering:
