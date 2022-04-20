@@ -1,6 +1,7 @@
 workflows:
   testing-workflow:
     name: iOS Workflow
+    instance_type: mac_pro
     environment:
       vars:
         XCODE_WORKSPACE: "TVToday.xcworkspace"
@@ -19,4 +20,27 @@ workflows:
         script: tuist generate
       - name: Run tests
         script: tuist test
+        test_report: build/ios/test/*.xml
+workflows:
+  testing-m1-workflow:
+    name: iOS M1 Workflow
+    instance_type: mac_mini_m1
+    environment:
+      vars:
+        XCODE_WORKSPACE: "TVToday.xcworkspace"
+        XCODE_SCHEME: "TVToday"
+      xcode: latest
+      cocoapods: default
+    triggering:
+      branch_patterns:
+        - pattern: "master"
+          include: true
+          source: true
+    scripts:
+      - name: Installing tuist
+        script: curl -Ls https://install.tuist.io | bash
+      - name: Generate project
+        script: tuist generate
+      - name: Run tests
+        script: arch -arm64 tuist test
         test_report: build/ios/test/*.xml
