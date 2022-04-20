@@ -19,7 +19,6 @@ workflows:
       - name: Run tests
         script: tuist test
         test_report: build/ios/test/*.xml
-workflows:
   testing-m1-workflow:
     name: iOS M1 Workflow
     instance_type: mac_mini_m1
