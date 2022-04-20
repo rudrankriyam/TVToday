@@ -9,10 +9,8 @@ workflows:
       xcode: latest
       cocoapods: default
     triggering:
-      branch_patterns:
-        - pattern: "master"
-          include: true
-          source: true
+      events: 
+        - push
     scripts:
       - name: Installing tuist
         script: curl -Ls https://install.tuist.io | bash
@@ -32,10 +30,8 @@ workflows:
       xcode: latest
       cocoapods: default
     triggering:
-      branch_patterns:
-        - pattern: "master"
-          include: true
-          source: true
+      events: 
+        - push
     scripts:
       - name: Installing tuist
         script: curl -Ls https://install.tuist.io | bash
