@@ -1,4 +1,3 @@
-[![Star History Chart](https://api.star-history.com/svg?repos=rudrankriyam/TVToday&type=Date)](https://star-history.com/#rudrankriyam/TVToday&Date)
 
 [![Tuist badge](https://img.shields.io/badge/Powered%20by-Tuist-blue)](https://tuist.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -69,3 +68,5 @@ This project is setup with [Tuist](https://tuist.io). Therefore no `xcodeproj`/`
 
 # Author
 Jeans Ruiz, jeansruiz.c@gmail.com
+
+[![Star History Chart](https://api.star-history.com/svg?repos=rudrankriyam/TVToday&type=Date)](https://star-history.com/#rudrankriyam/TVToday&Date)
