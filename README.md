@@ -1,3 +1,5 @@
+[![Star History Chart](https://api.star-history.com/svg?repos=rudrankriyam/TVToday&type=Date)](https://star-history.com/#rudrankriyam/TVToday&Date)
+
 [![Tuist badge](https://img.shields.io/badge/Powered%20by-Tuist-blue)](https://tuist.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Platforms](https://img.shields.io/badge/platform-iOS-lightgrey.svg)
